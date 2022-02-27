@@ -1,0 +1,14 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" #sidenav opened position="start">
+    <app-sidebar></app-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <app-menubar (toggleSidenav)="sidenav.toggle()"></app-menubar>
+    </mat-toolbar>
+    <div class="main-content">Hi Everyone</div>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<p>main-layout works!</p>
